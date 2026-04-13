@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Landing — Single Column Page</title>
+    <meta
+      name="description"
+      content="A sticky full-screen landing with a responsive single-column scroll section."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <div class="container header-inner">
+        <div class="brand" aria-label="Brand">
+          <span class="brand-name">Domspace</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="landing" class="landing" aria-label="Landing">
+        <div class="landing-video" aria-hidden="true">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/4iERhvSf8bA?autoplay=1&mute=1&controls=0&loop=1&playlist=4iERhvSf8bA&modestbranding=1&rel=0&playsinline=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="content" class="content" aria-label="Content">
+        <div class="container">
+          <article class="stack">
+            <header class="stack-header">
+              <h2>Single column, responsive by default</h2>
+              <p>
+                Everything below is intentionally one column, with media that scales nicely across
+                mobile, tablet, and desktop.
+              </p>
+            </header>
+
+            <section class="card reveal">
+              <h3>Section 1 — Text + Image</h3>
+              <p>
+                This image uses a responsive layout with rounded corners and a subtle border. The
+                container width is capped for readability.
+              </p>
+              <figure class="media">
+                <img
+                  src="https://picsum.photos/seed/domspace-1/1400/900"
+                  alt="Abstract landscape placeholder"
+                  loading="lazy"
+                />
+                <figcaption>Example image (placeholder source).</figcaption>
+              </figure>
+            </section>
+
+            <section class="card reveal">
+              <h3>Section 2 — Text + Video</h3>
+              <p>
+                The video element is fluid-width and keeps its aspect ratio. It works well for
+                embedded product demos or background clips (with controls off if you prefer).
+              </p>
+              <figure class="media">
+                <video
+                  controls
+                  preload="metadata"
+                  playsinline
+                  poster="https://picsum.photos/seed/domspace-poster/1400/900"
+                >
+                  <source
+                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4"
+                  />
+                  Sorry, your browser does not support embedded videos.
+                </video>
+                <figcaption>Example video (MDN sample).</figcaption>
+              </figure>
+            </section>
+
+            <section class="card reveal">
+              <h3>Section 3 — Text + Image</h3>
+              <p>
+                Cards use comfortable spacing, large tap targets, and a readable line length. This
+                stays single-column on all breakpoints.
+              </p>
+              <figure class="media">
+                <img
+                  src="https://picsum.photos/seed/domspace-2/1400/900"
+                  alt="Geometric shapes placeholder"
+                  loading="lazy"
+                />
+                <figcaption>Another placeholder image.</figcaption>
+              </figure>
+            </section>
+
+            <section id="final" class="card reveal">
+              <h3>Final section</h3>
+              <p>
+                The landing at the top is sticky and stays in place while you scroll until this
+                content section pushes over it.
+              </p>
+              <div class="inline-actions">
+                <a class="btn primary" href="#landing" data-scroll>Back to top</a>
+                <button class="btn ghost" type="button" id="scrollToNext">
+                  Scroll to next card
+                </button>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container footer-inner">
+        <small>Domspace</small>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
