@@ -3,23 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sticky Landing — Single Column Page</title>
+    <title>DOMSPACE</title>
     <meta
       name="description"
       content="A sticky full-screen landing with a responsive single-column scroll section."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
-
-    <header class="site-header" aria-label="Primary">
-      <div class="container header-inner">
-        <div class="brand" aria-label="Brand">
-          <span class="brand-name">Domspace</span>
-        </div>
-      </div>
-    </header>
 
     <main>
       <section id="landing" class="landing" aria-label="Landing">
@@ -27,8 +22,7 @@
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube-nocookie.com/embed/4iERhvSf8bA?autoplay=1&mute=1&controls=0&loop=1&playlist=4iERhvSf8bA&modestbranding=1&rel=0&playsinline=1"
-            title="YouTube video player"
+            src="https://www.youtube-nocookie.com/embed/_ijWhrAUWC0?autoplay=1&mute=1&controls=0&loop=1&playlist=_ijWhrAUWC0&modestbranding=1&rel=0&playsinline=1"            title="YouTube video player"
             frameborder="0"
             allow="autoplay; encrypted-media; picture-in-picture"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -40,92 +34,174 @@
       <section id="content" class="content" aria-label="Content">
         <div class="container">
           <article class="stack">
-            <header class="stack-header">
-              <h2>Single column, responsive by default</h2>
-              <p>
-                Everything below is intentionally one column, with media that scales nicely across
-                mobile, tablet, and desktop.
-              </p>
-            </header>
+            <section class="block reveal">
+              <h3>DOMSPACE
+                </h3>
 
-            <section class="card reveal">
-              <h3>Section 1 — Text + Image</h3>
               <p>
-                This image uses a responsive layout with rounded corners and a subtle border. The
-                container width is capped for readability.
-              </p>
+                DOMSPACE is a 3D media installation that transforms photographs of the stained glass windows of Mariendom Linz into a layered stereoscopic animation, combined with music and dance.
+                </p>
+              <p>
+                The project was created in the context of the Anton Bruckner Year 2024 and the 100th anniversary of Mariendom Linz. It was developed for the Deep Space 8K environment at the Ars Electronica Center, which combines synchronized wall and floor projections with stereoscopic visualization requiring 3D glasses and precise spatial alignment.              </p>
+
               <figure class="media">
                 <img
-                  src="https://picsum.photos/seed/domspace-1/1400/900"
-                  alt="Abstract landscape placeholder"
+                  src="./assets/image1.png"
+                  alt="DOMSPACE - 12/2024"
                   loading="lazy"
                 />
-                <figcaption>Example image (placeholder source).</figcaption>
+                <!-- <figcaption>Example image (placeholder source).</figcaption> -->
               </figure>
-            </section>
 
-            <section class="card reveal">
-              <h3>Section 2 — Text + Video</h3>
               <p>
-                The video element is fluid-width and keeps its aspect ratio. It works well for
-                embedded product demos or background clips (with controls off if you prefer).
-              </p>
-              <figure class="media">
-                <video
-                  controls
-                  preload="metadata"
-                  playsinline
-                  poster="https://picsum.photos/seed/domspace-poster/1400/900"
-                >
-                  <source
-                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-                    type="video/mp4"
-                  />
-                  Sorry, your browser does not support embedded videos.
-                </video>
-                <figcaption>Example video (MDN sample).</figcaption>
-              </figure>
-            </section>
+                As part of the project, Behiye Erdemir and Ozan Tezvaran were commissioned to convert 2D photographs of the stained glass windows into stereoscopic imagery. The main challenge was to create a sense of depth from flat images so that they could function within the spatial projection system.
+                </p>
 
-            <section class="card reveal">
-              <h3>Section 3 — Text + Image</h3>
-              <p>
-                Cards use comfortable spacing, large tap targets, and a readable line length. This
-                stays single-column on all breakpoints.
-              </p>
               <figure class="media">
                 <img
-                  src="https://picsum.photos/seed/domspace-2/1400/900"
-                  alt="Geometric shapes placeholder"
+                  src="./assets/image2.jpg"
+                  alt=""
                   loading="lazy"
                 />
-                <figcaption>Another placeholder image.</figcaption>
+                <figcaption>Photo: Deep Space 8K - Ars Electronica Center.</figcaption>
               </figure>
+  
+              <p>
+                To address this, a technique based on volumetric layering was developed in Blender. A digital model of the Deep Space 8K environment was recreated to serve as a spatial reference for the projections. Each image was divided into multiple layers and mapped onto separate planes positioned at varying depths within this three-dimensional setup. Volumetric fog was used to enhance spatial perception and continuity between layers. This process created the illusion of depth required for stereoscopic viewing.
+              </p>
+
+              <p>
+                The visual approach was inspired by Anthony McCall’s work <em>Line Describing a Cone</em>, particularly in its use of light, space, and volumetric form.
+                </p>
+                
+              <figure class="media">
+                <img
+                  src="./assets/image6.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+                <figcaption>Line Describing a Cone 1973, Anthony McCall - tate.org.uk</figcaption>
+              </figure>
+
+
+              <figure class="media">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/1-HWsxPnNNY?si=7DXraYUnmw0qYu4H" 
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+
+                <figcaption>Line Describing a Cone 1973, Anthony McCall - Tate Shots </figcaption>
+              </figure>
+
+
+              <figure class="media">
+                <img
+                  src="./assets/Asset 4@2x.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <!-- <figcaption>Photo: Deep Space 8K - Ars Electronica Center.</figcaption> -->
+              </figure>
+
+              <figure class="media">
+                <img
+                  src="./assets/Asset 3@2x.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <!-- <figcaption>Photo: Deep Space 8K - Ars Electronica Center.</figcaption> -->
+              </figure>
+
+              <figure class="media">
+                <img
+                  src="./assets/Asset 2@2x.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <!-- <figcaption>Photo: Deep Space 8K - Ars Electronica Center.</figcaption> -->
+              </figure>
+
+              <p>
+                The final animation has a duration of approximately 20 minutes and was designed specifically for the Deep Space 8K environment, which features 16 × 9 meter projection surfaces on both wall and floor. Using multiple virtual cameras in Blender, stereoscopic image pairs were generated for both surfaces. Precise alignment and depth calibration were required to ensure a coherent visual experience across the two projection planes.
+                </p>
+
+                <p>
+                  Reference video for the Blender workflow:
+                  <a style="font-weight: 700;" href="https://youtu.be/eOGOBUMKUow?si=LO_RTg76WPf_FRWT">
+                  Blender Ultimate Hologram Tutorial
+                  </a>
+                  </p>
+                  
+
+              
+              <figure class="media">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/5dOEKDZBUkU?autoplay=0&controls=0&rel=0&playsinline=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </figure>
+
+              
+              <p style="font-weight: 700;">Screenings:</p>
+              <p>
+                23. May 2025 19:00 – 19:45 <br>
+                29. Nov 2024 19:30 – 20:30 <br>
+                18. Dec 2024 19:30 – 20:30 <br>
+                Deep Space 8K - Ars Electronica Center <br>
+              </p>
+
+              <p style="font-weight: 700;">Credits:</p>
+              <p>
+                Coordination: Annette Lopez Leal, dancer and teacher of contemporary dance <br>
+
+                Partners: Pathfinder Collective: Behiye Erdemir, Ozan Tezvaran (media installation), Oscar Jockel (composer), ÖAW/IHB, Ars Electronica <br>
+
+                With the kind support of the Cultural Promotion of Upper Austria, the Sparkasse OÖ and the Mariendom Linz (Copyright of the provided photos: Mariendom Linz / Daniel Podosek 2023) <br>
+              </p>
+
             </section>
 
-            <section id="final" class="card reveal">
-              <h3>Final section</h3>
-              <p>
-                The landing at the top is sticky and stays in place while you scroll until this
-                content section pushes over it.
-              </p>
-              <div class="inline-actions">
-                <a class="btn primary" href="#landing" data-scroll>Back to top</a>
-                <button class="btn ghost" type="button" id="scrollToNext">
-                  Scroll to next card
-                </button>
-              </div>
-            </section>
           </article>
         </div>
+
+
+
       </section>
+
+
+
+
     </main>
 
     <footer class="site-footer" aria-label="Footer">
       <div class="container footer-inner">
-        <small>Domspace</small>
+        <small>DOMSPACE</small>
       </div>
     </footer>
+
+    <div
+      id="lightbox"
+      class="lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Enlarged image"
+    >
+      <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+      <img class="lightbox-img" src="" alt="" />
+    </div>
 
     <script src="./script.js" defer></script>
   </body>
