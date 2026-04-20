@@ -10,7 +10,7 @@
   --accent2: #39d0ff;
 
   --radius: 18px;
-  --container: 920px;
+  --container: 680px;
 }
 
 /* Dark theme (toggled by JS) */
@@ -145,14 +145,14 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 90vh;
+  height: 100vh;
   background: #000;
   pointer-events: none;
 }
 
 .landing-video iframe {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -291,12 +291,12 @@ a {
 
 .block h3 {
   margin: 0 0 0.4rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .block p {
   margin: 0.25rem 0 1rem;
   color: var(--muted);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .media {
